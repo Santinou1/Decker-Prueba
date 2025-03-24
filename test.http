@@ -1,0 +1,88 @@
+
+
+### Clear database
+DELETE http://localhost:3000/api/commets
+
+### Get all commets
+GET http://localhost:3000/api/commets
+
+### Test 1: Formato básico
+POST http://localhost:3000/api/commets
+Content-Type: application/json
+
+[
+  {
+    "deal_id": "A1",
+    "total": 5000,
+    "rep_name": "Ana Pérez",
+    "sold_at": "2024-03-01T10:00:00Z"
+  }
+]
+
+### Test 2: Diferentes nombres de campos
+POST http://localhost:3000/api/commets
+Content-Type: application/json
+
+[
+  {
+    "transaction_id": "B1",
+    "amount": 7500,
+    "sales_person": "Juan Gómez",
+    "created_on": "2024-03-02T15:30:00Z"
+  },
+  {
+    "reference": "B2",
+    "deal_value": 3000,
+    "agent": "María López",
+    "timestamp": "2024-03-03T09:45:00Z"
+  }
+]
+
+### Test 3: Mezcla de diferentes formatos
+POST http://localhost:3000/api/commets
+Content-Type: application/json
+
+[
+  {
+    "unique_id": "C1",
+    "sale_value": 12000,
+    "representative": "Carlos Ruiz",
+    "deal_date": "2024-03-04T11:20:00Z"
+  },
+  {
+    "sale_id": "C2",
+    "transaction_amount": 8500,
+    "sales_agent": "Laura Torres",
+    "completed_at": "2024-03-05T16:15:00Z"
+  },
+  {
+    "external_id": "C3",
+    "price": 15000,
+    "employee": "Pedro Sánchez",
+    "closed_at": "2024-03-06T14:30:00Z"
+  }
+]
+
+### Test 4: Prueba de error - Datos inválidos
+POST http://localhost:3000/api/commets
+Content-Type: application/json
+
+[
+  {
+    "wrong_id": "D1",
+    "invalid_amount": "no es un número",
+    "wrong_person": "",
+    "invalid_date": "fecha inválida"
+  }
+]
+
+### Test 5: Prueba de error - No es un array
+POST http://localhost:3000/api/commets
+Content-Type: application/json
+
+{
+  "deal_id": "E1",
+  "amount": 5000,
+  "rep_name": "Ana Pérez",
+  "sold_at": "2024-03-01"
+}

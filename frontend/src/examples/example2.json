@@ -1,0 +1,14 @@
+[
+  {
+    "transaction_id": "B1",
+    "amount": 3000,
+    "sales_person": "María López",
+    "date": "2024-03-03T09:45:00Z"
+  },
+  {
+    "transaction_id": "B2",
+    "amount": 12000,
+    "sales_person": "Juan Gómez",
+    "date": "2024-03-04T11:20:00Z"
+  }
+]

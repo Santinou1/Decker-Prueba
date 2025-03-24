@@ -1,0 +1,14 @@
+[
+  {
+    "deal_id": "A1",
+    "total": 5000,
+    "rep_name": "Ana Pérez",
+    "sold_at": "2024-03-01T10:00:00Z"
+  },
+  {
+    "deal_id": "A2",
+    "total": 7500,
+    "rep_name": "Carlos Ruiz",
+    "sold_at": "2024-03-02T15:30:00Z"
+  }
+]
