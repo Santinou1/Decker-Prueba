@@ -14,6 +14,7 @@ decker-prueba/
 │   ├── routes/        # Rutas de la API
 │   ├── services/      # Servicios y lógica de negocio
 │   └── index.ts       # Punto de entrada del backend
+├── workflow-git.md    # Documentación del workflow de Git
 └── package.json
 ```
 
@@ -121,6 +122,15 @@ B2,4500,Maria García,2024/03/04
 ```
 
 Encontrarás ejemplos de ambos formatos en la carpeta `frontend/src/examples/`.
+
+## Documentación
+
+### Workflow de Git
+Se ha creado un archivo `workflow-git.md` que explica el proceso de trabajo con Git en el proyecto, incluyendo:
+- Creación de branches para nuevas features
+- Proceso de Pull Requests
+- Convención de nombres (NK-XX)
+- Integración con el sistema de transformación
 
 ## Desarrollo
 
